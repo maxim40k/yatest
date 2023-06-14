@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "Yandex Sans Text";
+    src: url("YandexSansText-Regular.eot");
+    src: local("Yandex Sans Text Regular"), local("YandexSansText-Regular"), url("YandexSansText-Regular.eot?#iefix") format("embedded-opentype"), url("YandexSansText-Regular.woff2") format("woff2"),
+        url("YandexSansText-Regular.woff") format("woff"), url("YandexSansText-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Yandex Sans Text";
+    src: url("YandexSansText-Bold.eot");
+    src: local("Yandex Sans Text Bold"), local("YandexSansText-Bold"), url("YandexSansText-Bold.eot?#iefix") format("embedded-opentype"), url("YandexSansText-Bold.woff2") format("woff2"), url("YandexSansText-Bold.woff") format("woff"),
+        url("YandexSansText-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Yandex Sans Text";
+    src: url("YandexSansText-Medium.eot");
+    src: local("Yandex Sans Text Medium"), local("YandexSansText-Medium"), url("YandexSansText-Medium.eot?#iefix") format("embedded-opentype"), url("YandexSansText-Medium.woff2") format("woff2"),
+        url("YandexSansText-Medium.woff") format("woff"), url("YandexSansText-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+/*ТУТ НАЧИНАЮТСЯ СТИЛИ БЛОКОВ*/
+/*первая часть страницы*/
+.allimages {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.image {
+    width: 375px;
+    height: 703px;
+}
+body {
+    font-family: "Yandex Sans Text";
+    font-style: normal;
+    line-height: 125%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+#background-video {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    left: 3px;
+    z-index: -1;
+    scale: 100%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-width: 0;
+}
+#text_block1 {
+    width: 206px;
+    height: 97px;
+    position: relative;
+    top: 100px;
+    left: 240px;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 108%;
+    letter-spacing: -0.01em;
+    color: #121212;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+#text_block1-2 {
+    width: 299px;
+    height: 69px;
+    position: relative;
+    top: 32px;
+    left: 240px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    color: #595959;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+#text_block2 {
+    width: 220px;
+    height: 46px;
+    position: relative;
+    top: 122px;
+    left: 240px;
+
+    font-weight: 700;
+    font-size: 18px;
+
+    letter-spacing: 0.02em;
+    color: #121212;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+#text_block2-2 {
+    width: 186px;
+    height: 60px;
+    position: relative;
+    top: 122px;
+    left: 240px;
+
+    font-weight: 400;
+    font-size: 16px;
+
+    letter-spacing: 0.02em;
+    color: #121212;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+#text_block3 {
+    width: 155px;
+    height: 23px;
+    position: relative;
+    top: 142px;
+    left: 240px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #121212;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+#text_block3-2 {
+    width: 198px;
+    height: 60px;
+    position: relative;
+    top: 142px;
+    left: 240px;
+    font-weight: 400;
+    font-size: 16px;
+
+    letter-spacing: 0.02em;
+
+    color: #121212;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+#text_block4 {
+    width: 46px;
+    height: 23px;
+    position: relative;
+    top: 162px;
+    left: 240px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #121212;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+#video {
+    position: relative;
+}
+@media screen and (max-width: 1024px) {
+    #text_block1,
+    #text_block1-2,
+    #text_block2,
+    #text_block2-2,
+    #text_block3,
+    #text_block3-2,
+    #text_block4 {
+        left: 60px;
+    }
+    #video {
+        height: 100vh;
+    }
+    #background-video {
+        height: 100%;
+    }
+}
